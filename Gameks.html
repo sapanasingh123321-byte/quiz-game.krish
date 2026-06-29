@@ -1,0 +1,510 @@
+<html>
+ <head><title>qiuz game</title>
+ <style>
+  body{
+   padding: 0px;
+   margin: 0px;
+   display: flex;
+   flex-direction: column;
+  }
+  
+ .tool_bar{
+  display: flex;
+  padding: 5px;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  height: 100%;
+  width: 15%;
+  box-shadow: 2px 2px 10px #000000fe;
+ }
+ .homebtn{
+  width: 95%;
+  height: 30px;
+  border-radius: 1px 10px 10px;
+  border: none;
+  box-shadow: 2px 2px 5px;
+  font-size: 1em;
+  background-color:  #cf6619fe;
+  border-right:solid #4b2203fe 5px;
+ }
+  .aboutbtn{
+   
+  width: 95%;
+  height: 30px;
+  border-radius: 1px 10px 10px;
+  border: none;
+  box-shadow: 2px 2px 5px;
+  font-size: 1em;
+  background-color: #cf6619fe;
+    border-right:solid #4b2203fe 5px;
+ }
+ .home_page{
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% - 15%);
+  margin-left: 15%;
+  background-color: white;
+ }
+ 
+  .about_page{
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% - 15%);
+  margin-left: 15%;
+  background-color: white;
+ }
+ 
+  .pagetopic{
+   font-size: 2em;
+  }
+  .questionsbox{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 95%;
+   background-color: ;
+   gap: 15px;
+
+  }
+  
+  .sub_question{
+   position: relative;
+   justify-content: space-between;
+   align-items: center;
+   display: flex;
+   padding: 20px;
+   height: 10px;
+   width: 95%;
+   border-radius: 1px 15px 15px;
+   background-color: ;
+   border-style: dashed;
+   border: solid #904208fe;
+  }
+
+  p{
+   padding: 3px;
+   
+  }
+  .select{
+   height: 30px;
+  }
+  .logo{
+   height: 100px;
+   width: 100px;
+   border-radius: 180px;
+   border-style: dashed ;
+ 
+  }
+  .check{
+   background-color: #ec9050fe;
+   border-radius: 20px;
+   border: none;
+   box-shadow: 2px 2px 10px #babe;
+   width: 100px;
+   height: 30px;
+   position:relative;
+   margin-bottom: 10px;
+  }
+ </style>
+ 
+ </head>
+ <body>
+  
+  <!-----toolbar----->
+  <div class="tool_bar">
+   <img src="krish.jpg" class="logo">
+   DEVELOPER <br>Krish Singh<br>
+   Class:9'k'<br>
+   front-end project..
+   <hr width="100%">
+
+  </div>
+  <!---homepage---->
+  <div class="home_page" id="homePage">
+   <div class="pagetopic"><b>QUIZ GAME!</b></div>
+   <hr width="100%">
+   
+   <!----questions area--->
+   <div class="questionsbox">
+    
+    <!------ques1---->
+    
+    <div class="sub_question" id="sub_question1">
+     <p>1.Which is the only planet in our solar system that rotates on its side ❓</p>
+     
+     <select class="select" id="ques1">
+   <option value="0">Choose </option>
+   <option value="1">Saturn</option>
+      <option value="2">Jupiter</option>
+         <option value="3">pluto</option>
+            <option value="4">Uranus</option>
+  </select>
+    </div>
+        <!------ques2--->
+        <div class="sub_question" id="sub_question2">
+     <p>2.What is the SI unit of electric resistance❓</p>
+     
+       <select class="select" id="ques2">
+   <option value="0">Choose </option>
+   <option value="1">Ohm (Ω)</option>
+      <option value="2">Ampere (A)</option>
+         <option value="3">Watt (W)</option>
+            <option value="4">columb (c)</option>
+  </select>
+    </div>
+            <!------ques3--->
+        <div class="sub_question" id="sub_question3">
+     <p>3.Which element has the chemical symbol W?❓</p>
+     
+       <select class="select" id="ques3">
+   <option value="0">Choose </option>
+   <option value="1">Germanium</option>
+      <option value="2">Titanium</option>
+         <option value="3">iron</option>
+            <option value="4">Tungsten</option>
+  </select>
+    </div>
+        <!------ques4---->
+    
+    <div class="sub_question" id="sub_question4">
+     <p>4.Who proposed the three laws of planetary motion ❓</p>
+     
+       <select class="select" id="ques4">
+   <option value="0">Choose </option>
+   <option value="1">James Watts</option>
+      <option value="2">Johannes Kepler</option>
+         <option value="3">Robert H.whittaker</option>
+            <option value="4">carlous Linnaeus</option>
+  </select>
+    </div>
+        <!------ques5--->
+        <div class="sub_question" id="sub_question5">
+     <p>5.What is the largest organ inside the human body❓</p>
+     
+       <select class="select" id="ques5">
+   <option value="0">Choose </option>
+   <option value="1">heart</option>
+      <option value="2">kidney</option>
+         <option value="3">Liver</option>
+            <option value="4">brain</option>
+  </select>
+    </div>
+            <!------ques6--->
+        <div class="sub_question" id="sub_question6">
+     <p>6.Which country has the longest coastline in the world ❓</p>
+     
+       <select class="select" id="ques6">
+   <option value="0">Choose </option>
+   <option value="1">Canada</option>
+      <option value="2">france</option>
+         <option value="3">japan</option>
+            <option value="4">brazil</option>
+  </select>
+    </div>
+    
+        <!------ques7---->
+    
+    <div class="sub_question" id="sub_question7">
+     <p>7.What is the smallest unit of life❓</p>
+     
+       <select class="select" id="ques7">
+   <option value="0">Choose </option>
+   <option value="1">bone</option>
+      <option value="2">tissue</option>
+         <option value="3">Cell</option>
+            <option value="4">organ</option>
+  </select>
+    </div>
+        <!------ques8--->
+        <div class="sub_question" id="sub_question8">
+     <p>8.Which gas is the most abundant in Earth's atmosphere ❓</p>
+     
+       <select class="select" id="ques8">
+   <option value="0">Choose </option>
+   <option value="1">helium</option>
+      <option value="2">Carbon dioxide</option>
+         <option value="3">oxygen</option>
+            <option value="4">Nitrogen</option>
+  </select>
+    </div>
+            <!------ques9-->
+        <div class="sub_question" id="sub_question9">
+     <p>9.What is the capital city of Australia ❓</p>
+     
+       <select class="select" id="ques9">
+   <option value="0">Choose </option>
+   <option value="1">Canberra</option>
+      <option value="2">tokyo</option>
+         <option value="3">paris</option>
+            <option value="4">london</option>
+  </select>
+    </div>
+        <!------ques10---->
+    
+    <div class="sub_question" id="sub_question10">
+     <p>10.What is the hardest naturally occurring substance on Earth? ❓</p>
+     
+       <select class="select" id="ques10">
+   <option value="0">Choose </option>
+   <option value="1">obsidian</option>
+      <option value="2">Diamond</option>
+         <option value="3">ruby</option>
+            <option value="4">amraild</option>
+  </select>
+    </div>
+        <!------ques11-->
+        <div class="sub_question" id="sub_question11">
+     <p>11.Which blood group is known as the universal donor? ❓</p>
+     
+       <select class="select" id="ques11">
+   <option value="0">Choose </option>
+   <option value="1">B negative</option>
+      <option value="2">AB positive</option>
+         <option value="3">O negative</option>
+            <option value="4">o positive</option>
+  </select>
+    </div>
+            <!------ques12--->
+        <div class="sub_question" id="sub_question12">
+     <p>12.Which mountain range separates Europe and Asia?❓</p>
+     
+       <select class="select" id="ques12">
+   <option value="0">Choose </option>
+   <option value="1">mount kanchanjangha</option>
+      <option value="2">Ural Mountains</option>
+         <option value="3">mount Fuji</option>
+            <option value="4">mount Everest</option>
+  </select>
+    </div>
+       
+            <!------ques13---->
+    
+    <div class="sub_question" id="sub_question13">
+     <p>13.Which is the deepest ocean trench on Earth?❓</p>
+     
+       <select class="select" id="ques13">
+   <option value="0">Choose </option>
+   <option value="1">Mariana Trench</option>
+      <option value="2">Philippine Trench</option>
+         <option value="3">Tonga trench</option>
+            <option value="4">Aleutian Trench</option>
+  </select>
+    </div>
+        <!------ques14-->
+        <div class="sub_question" id="sub_question14">
+     <p>14.Which vitamin is mainly produced in the skin when exposed to sunlight?  ❓</p>
+     
+       <select class="select" id="ques14">
+   <option value="0">Choose </option>
+   <option value="1">vitamin K</option>
+      <option value="2">vitamin B</option>
+         <option value="3">vitamin c</option>
+            <option value="4">Vitamin D</option>
+  </select>
+    </div>
+            <!------ques15--->
+        <div class="sub_question" id="sub_question15">
+     <p>15.What is the speed of light in a vacuum (approximately)❓</p>
+     
+       <select class="select" id="ques15">
+   <option value="0">Choose </option>
+   <option value="1">Approximately 3 × 10¹⁰ m/s</option>
+      <option value="2">Approximately 4 × 10⁸ m/s</option>
+         <option value="3">Approximately 3 × 10⁸ m/s</option>
+            <option value="4">Approximately 9 × 10⁸ m/s</option>
+  </select>
+    </div>
+    submit to check!<button onClick="check()" class="check">SUBMIT</button>
+   </div>
+   
+  </div>
+
+  
+  <script>
+   
+   //for the question functions 
+   
+   
+  function check(){
+   //taking element from html code.....
+   
+   let ans1 = document.getElementById("ques1").value;
+   let box1 = document.getElementById("sub_question1");
+   let ans2 = document.getElementById("ques2").value;
+   let box2 = document.getElementById("sub_question2");
+   let ans3 = document.getElementById("ques3").value;
+   let box3 = document.getElementById("sub_question3");
+   let ans4 = document.getElementById("ques4").value;
+   let box4 = document.getElementById("sub_question4");
+   let ans5 = document.getElementById("ques5").value;
+   let box5 = document.getElementById("sub_question5");
+   let ans6 = document.getElementById("ques6").value;
+   let box6 = document.getElementById("sub_question6");
+   let ans7 = document.getElementById("ques7").value;
+   let box7 = document.getElementById("sub_question7");
+   let ans8 = document.getElementById("ques8").value;
+   let box8 = document.getElementById("sub_question8");
+   let ans9 = document.getElementById("ques9").value;
+   let box9 = document.getElementById("sub_question9");
+   let ans10 = document.getElementById("ques10").value;
+   let box10 = document.getElementById("sub_question10");
+   let ans11 = document.getElementById("ques11").value;
+   let box11= document.getElementById("sub_question11");
+   let ans12 = document.getElementById("ques12").value;
+   let box12 = document.getElementById("sub_question12");
+   let ans13= document.getElementById("ques13").value;
+   let box13 = document.getElementById("sub_question13");
+   let ans14 = document.getElementById("ques14").value;
+   let box14 = document.getElementById("sub_question14");
+   let ans15 = document.getElementById("ques15").value;
+   let box15 = document.getElementById("sub_question15");
+   
+ 
+   //for 1st......
+   if(ans1==4){
+
+   box1.style.border = "solid #83f600fe";
+   }else{
+
+    box1.style.border = "solid #ff3719fe";
+   }
+
+
+   //for 2.....
+   if(ans2==1){
+
+   box2.style.border = "solid #83f600fe";
+   }else{
+
+    box2.style.border = "solid #ff3719fe";
+   }
+      //for 3...
+   if(ans3==4){
+
+   box3.style.border = "solid #83f600fe";
+   }else{
+
+    box3.style.border = "solid #ff3719fe";
+   }
+
+
+   //for 4....
+   if(ans4==2){
+
+   box4.style.border = "solid #83f600fe";
+   }else{
+
+    box4.style.border = "solid #ff3719fe";
+   }
+      //for 5....
+   if(ans5==3){
+
+   box5.style.border = "solid #83f600fe";
+   }else{
+
+    box5.style.border = "solid #ff3719fe";
+   }
+
+
+   //for 6....
+   if(ans6==1){
+
+   box6.style.border = "solid #83f600fe";
+   }else{
+
+    box6.style.border = "solid #ff3719fe";
+   }
+      //for 7..
+   if(ans7==3){
+
+   box7.style.border = "solid #83f600fe";
+   }else{
+
+    box7.style.border = "solid #ff3719fe";
+   }
+
+
+   //for 8..
+   if(ans8==4){
+
+   box8.style.border = "solid #83f600fe";
+   }else{
+
+    box8.style.border = "solid #ff3719fe";
+   }
+   
+   //for 9.....
+   if(ans9==1){
+
+   box9.style.border = "solid #83f600fe";
+   }else{
+
+    box9.style.border = "solid #ff3719fe";
+   }
+
+
+   //for 10.....
+   if(ans10==2){
+
+   box10.style.border = "solid #83f600fe";
+   }else{
+
+    box10.style.border = "solid #ff3719fe";
+   }
+      //for 11...
+   if(ans11==3){
+
+   box11.style.border = "solid #83f600fe";
+   }else{
+
+    box11.style.border = "solid #ff3719fe";
+   }
+
+
+   //for 12...
+   if(ans12==2){
+
+   box12.style.border = "solid #83f600fe";
+   }else{
+
+    box12.style.border = "solid #ff3719fe";
+   }
+      //for 13....
+   if(ans13==1){
+
+   box13.style.border = "solid #83f600fe";
+   }else{
+
+    box13.style.border = "solid #ff3719fe";
+   }
+
+
+   //for 14....
+   if(ans14==4){
+
+   box14.style.border = "solid #83f600fe";
+   }else{
+
+    box14.style.border = "solid #ff3719fe";
+   }
+      //for 15.
+   if(ans15==3){
+
+   box15.style.border = "solid #83f600fe";
+   }else{
+
+    box15.style.border = "solid #ff3719fe";
+   }
+   
+  }
+   
+   
+  </script>
+ </body>
+</html>
